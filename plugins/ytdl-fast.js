@@ -57,12 +57,12 @@ cmd({
 // MP3 song download 
 
 cmd({ 
-    pattern: "song", 
+    pattern: "mp3", 
     alias: ["play", "mp3"], 
     react: "🎶", 
     desc: "Download YouTube song", 
     category: "main", 
-    use: '.song <query>', 
+    use: '.mp3 <query>', 
     filename: __filename 
 }, async (conn, mek, m, { from, sender, reply, q }) => { 
     try {
